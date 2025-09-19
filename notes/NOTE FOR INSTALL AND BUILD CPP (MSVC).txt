@@ -1,11 +1,11 @@
 # Install through winget:
 
-> winget install Microsoft.VisualStudio.xxx.BuildTools --force --override "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK"
+> winget install Microsoft.VisualStudio.xxx.BuildTools --force --override "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows1xSDK.xxx"
 
 ## Explain:
 
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64: MSVC <-- contains C++ libraries
-Microsoft.VisualStudio.Component.Windows10SDK: Windows Universal C Runtime (Windows SDK) <-- contains C libraries which C++ libraries depend on
+Microsoft.VisualStudio.Component.Windows1xSDK.xxx: Windows 1x SDK <-- contains C libraries which C++ libraries depend on
 
 # Then, set up system environment variables:
 
@@ -14,12 +14,12 @@ C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\
 
 LIB:
 C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\lib\x64
-C:\Program Files (x86)\Windows Kits\10\Lib\xxx\um\x64
-C:\Program Files (x86)\Windows Kits\10\Lib\xxx\ucrt\x64
+C:\Program Files (x86)\Windows Kits\1x\Lib\xxx\um\x64
+C:\Program Files (x86)\Windows Kits\1x\Lib\xxx\ucrt\x64
 
 INCLUDE:
 C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\include
-C:\Program Files (x86)\Windows Kits\10\Include\xxx\ucrt
+C:\Program Files (x86)\Windows Kits\1x\Include\xxx\ucrt
 
 # Finally, you can compile CPP on terminal
 
