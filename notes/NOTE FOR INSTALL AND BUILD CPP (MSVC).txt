@@ -1,0 +1,26 @@
+# Install through winget:
+
+> winget install Microsoft.VisualStudio.xxx.BuildTools --override "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK"
+
+## Explain:
+
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64: MSVC
+Microsoft.VisualStudio.Component.Windows10SDK: Windows Universal C Runtime (Windows SDK)
+
+# Then, set up system environment variables:
+
+Path:
+C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\bin\Hostx64\x64
+
+LIB:
+C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\lib\x64
+C:\Program Files (x86)\Windows Kits\10\Lib\xxx\um\x64
+C:\Program Files (x86)\Windows Kits\10\Lib\xxx\ucrt\x64
+
+INCLUDE:
+C:\Program Files (x86)\Microsoft Visual Studio\xxx\BuildTools\VC\Tools\MSVC\xxx\include
+C:\Program Files (x86)\Windows Kits\10\Include\xxx\ucrt
+
+# Finally, you can compile CPP on terminal
+
+> cl main.cpp
