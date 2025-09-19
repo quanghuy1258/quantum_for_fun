@@ -4,8 +4,8 @@
 
 ## Explain:
 
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64: MSVC
-Microsoft.VisualStudio.Component.Windows10SDK: Windows Universal C Runtime (Windows SDK)
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64: MSVC <-- contains C++ libraries
+Microsoft.VisualStudio.Component.Windows10SDK: Windows Universal C Runtime (Windows SDK) <-- contains C libraries which C++ libraries depend on
 
 # Then, set up system environment variables:
 
