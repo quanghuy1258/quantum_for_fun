@@ -1,6 +1,6 @@
 # Install through winget:
 
-> winget install Microsoft.VisualStudio.xxx.BuildTools --override "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK"
+> winget install Microsoft.VisualStudio.xxx.BuildTools --force --override "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK"
 
 ## Explain:
 
