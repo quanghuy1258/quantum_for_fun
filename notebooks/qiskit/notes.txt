@@ -1,0 +1,9 @@
+# Basic packages
+pip install qiskit
+pip install qiskit[visualization]
+
+# A package for quantum computing simulators with realistic noise models
+pip install qiskit-aer
+
+# For only run tutorials on https://quantum.cloud.ibm.com/docs/en/tutorials
+pip install qiskit-ibm-runtime
